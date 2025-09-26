@@ -15,12 +15,12 @@ header {
 }
 
 #site-logo {
-  height: 100px;
+  height: 50px;
 }
 
 .login-box {
   width: 100%;
-  max-width: 580px;
+  max-width: 580px;        /* longer form */
   margin: 100px 0;
   padding: 40px 20px;
 }
@@ -45,6 +45,7 @@ header {
   margin-top: 5px;
 }
 
+/* Input fields */
 .login-box form input {
   width: 100%;
   padding: 20px;
@@ -56,28 +57,20 @@ header {
   background-color: #fff;
   text-align: left;
   background-repeat: no-repeat;
-  background-position: 15px center;
-  padding-left: 50px;
+  background-position: 10px center;   /* default position */
+  background-size: 20px 20px;         /* default size */
+  padding-left: 40px;                  /* space for icon */
 }
 
-/* Email field icon */
+/* Email icon */
 .login-box input[name="email"] {
   background-image: url('../images/email-icon.png');
-  background-repeat: no-repeat;
-  background-position: 10px center;   /* slightly inset from the left */
-  background-size: 20px 20px;         /* make the icon small */
-  padding-left: 40px;                  /* space for the icon + padding */
 }
 
-/* Password field icon */
+/* Password icon */
 .login-box input[name="password"] {
   background-image: url('../images/password-icon.png');
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 20px 20px;
-  padding-left: 40px;
 }
-
 
 .login-box form input:focus {
   outline: none;
@@ -89,7 +82,7 @@ header {
   padding: 20px;
   background: #ff6600;
   border: none;
-  border-radius: 30px;
+  border-radius: 30px;     /* curved button */
   color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
@@ -100,5 +93,3 @@ header {
 .login-box form button:hover {
   background: #e65c00;
 }
-
-
