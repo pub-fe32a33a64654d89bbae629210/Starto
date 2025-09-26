@@ -60,14 +60,24 @@ header {
   padding-left: 50px;
 }
 
-/* Add icons */
+/* Email field icon */
 .login-box input[name="email"] {
   background-image: url('../images/email-icon.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;   /* slightly inset from the left */
+  background-size: 20px 20px;         /* make the icon small */
+  padding-left: 40px;                  /* space for the icon + padding */
 }
 
+/* Password field icon */
 .login-box input[name="password"] {
   background-image: url('../images/password-icon.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+  padding-left: 40px;
 }
+
 
 .login-box form input:focus {
   outline: none;
@@ -90,4 +100,5 @@ header {
 .login-box form button:hover {
   background: #e65c00;
 }
+
 
