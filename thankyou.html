@@ -2,30 +2,71 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Danke!</title>
+  <title>Fehler</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background-color: #f2f2f2; /* same light gray as login */
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      color: #333;
+      margin: 0;
     }
-    .message {
+
+    .login-box {
+      background: transparent; /* blends into background */
       text-align: center;
-      padding: 30px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 10px 40px #00000030;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 40px; /* adjust if needed */
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #cc3300; /* burnt orange */
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #cc3300; /* burnt orange */
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #a32900; /* darker orange on hover */
     }
   </style>
 </head>
 <body>
-  <div class="message">
-    <h1>Danke!</h1>
-    <p>Ihre Daten wurden erfolgreich übermittelt.</p>
+  <!-- Logo -->
+  <img src="images/logo.png" alt="Strato Logo" class="logo">
+
+  <!-- Message Box -->
+  <div class="login-box">
+    <h1>Netzwerkfehler</h1>
+    <p>Bitte versuchen Sie es erneut mit den korrekten Login-Daten.</p>
+    <a href="index.html" class="back-button">Zurück zum Login</a>
   </div>
 </body>
 </html>
